@@ -51,6 +51,7 @@ group :development do
 
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
+  gem 'rails_event_store-rspec'
 end
 
 group :test do
