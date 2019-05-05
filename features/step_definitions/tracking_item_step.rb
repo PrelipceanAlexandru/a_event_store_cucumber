@@ -10,7 +10,7 @@ When("{string} event is published") do |event_name|
   event_store.publish(event, stream_name: stream_name)  
 end
 
-Then("item {int} raises an {string} event") do |item_uid, event|
+Then("item {int} publishes an {string} event") do |item_uid, event|
 
   expect(event_store).to have_published(an_event(event.constantize))
 end
