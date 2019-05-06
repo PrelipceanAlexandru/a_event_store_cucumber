@@ -2,12 +2,12 @@ Feature: The system tracks items as they go through different states
   Scenario: Check if ItemCreated event is published
             Given uid 1 and name "item_1"
             When "ItemCreated" event is published
-            Then item 1 publishes an "Events::ItemCreated" event
+            Then an "ItemCreated" event should be published once for item 1
 
   Scenario: Check if ItemUpdated event is published
             Given uid 2 and name "item_2"
             When "ItemUpdated" event is published
-            Then item 2 publishes an "Events::ItemUpdated" event
+            Then an "ItemUpdated" event should be published once for item 2
 
   Scenario: Check the number of events published by an item
             Given uid 3 and name "item_3"
