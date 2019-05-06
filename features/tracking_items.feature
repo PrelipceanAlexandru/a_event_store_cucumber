@@ -1,4 +1,4 @@
-Feature: The system tracks items as they go through different processes
+Feature: The system tracks items as they go through different states
   Scenario: Check if ItemCreated event is published
             Given uid 1 and name "item_1"
             When "ItemCreated" event is published
