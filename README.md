@@ -2,7 +2,8 @@
 
 # Project
 
-Rails Event Store and Cucumber Tests
+[Rails Event Store and Cucumber Tests](https://assist-software.net/snippets/how-integrate-cucumber-tests-rails-event-store)
+
 
 ## Install
 
