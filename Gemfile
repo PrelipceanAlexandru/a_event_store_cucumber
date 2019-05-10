@@ -57,9 +57,9 @@ group :test do
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
 
-  gem 'cucumber-rails', require: false
+  gem 'cucumber-rails'
   gem 'database_cleaner'
-  
+
   gem 'rails_event_store-rspec'
 end
 

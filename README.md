@@ -1,24 +1,55 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Project
 
-Things you may want to cover:
+Rails Event Store and Cucumber Tests
 
-* Ruby version
+## Install
 
-* System dependencies
+### Clone the repository
 
-* Configuration
+```shell
+git clone https://github.com/PrelipceanAlexandru/event_store_and_cucumber_tests.git
+cd path_to_project
+```
 
-* Database creation
+### Check your Ruby version
 
-* Database initialization
+```shell
+ruby -v
+```
 
-* How to run the test suite
+The ouput should start with something like `ruby 2.5.3`
 
-* Services (job queues, cache servers, search engines, etc.)
+### Install dependencies
 
-* Deployment instructions
+Using [Bundler](https://github.com/bundler/bundler)
 
-* ...
+```shell
+bundle
+```
+
+### Configure the database
+
+Create a `local_env.yml` file under `config` folder and add:
+
+```shell
+USERNAME: YOUR_USERNAME
+PASSWORD: YOUR_PASSWORD
+DATABASE: YOUR_DEV_DATABASE
+
+TEST_DATABASE: YOUR_TEST_DATABASE
+PROD_DATABASE: YOUR_PROD_DATABASE
+```
+
+### Initialize the database
+
+```shell
+rails db:create db:migrate
+```
+
+## Run cucumber tests
+
+```shell
+cucumber
+```
